@@ -16,9 +16,23 @@ body {
     color: var(--main-txt-color);
 }
 
+img {
+    width: 50%;
+    padding: 5px 5px;
+}
+
+ul {
+    white-space: nowrap;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
 .container {
     width: var(--container-width);
-    margin: 20rem auto;
+    margin: 20px auto;
 }
 
 header#CSS {
