@@ -1,0 +1,61 @@
+/*root elements changes everything*/
+:root {
+    --main-bg-color: wheat;
+    --main-txt-color: black;
+    --container-width: 60%;
+    --header-bg-color: black;
+    --header-txt-color: white;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+
+.container {
+    width: var(--container-width);
+    margin: 20rem auto;
+}
+
+header#CSS {
+    background-color: var(--header-bg-color);
+    color: var(--header-txt-color);
+}
+
+header#CSS h1{
+    padding: 0;
+    margin: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Only variables within Example*/
+.Example {
+    --box-bg-color: rgb(211, 211, 211);
+    --box-main-color: red;
+    --box-outline-color: blue;
+    --box-glow-color: rgb(235, 98, 8);
+    --box-padding: 2px 5px;
+    --box-shadow-h-offset: 10px;
+    --box-shadow-v-offset: 5px;
+    --box-shadow-blur: 5px;
+}
+
+.Example {
+    background-color: var(--box-bg-color);
+    padding: var(--box-padding);
+    border: 1px solid var(--box-outline-color);
+    box-shadow: var(--box-shadow-h-offset) var(--box-shadow-v-offset) var(--box-shadow-blur) var(--box-glow-color);
+}
+
+.Example h1{
+    color: var(--box-main-color);
+}
